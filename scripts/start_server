@@ -4,6 +4,6 @@ project_folder=${current_path%%/scripts*}
 activate () {
   . $project_folder/venv/bin/activate
 }
-
+pwd
 flask --app flaskr init-db
 flask --app flaskr run
