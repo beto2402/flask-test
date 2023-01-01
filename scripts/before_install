@@ -12,3 +12,4 @@ activate () {
 
 $project_folder/venv/bin/pip install -e ../..
 $project_folder/venv/bin/pip install -e .
+$project_folder/venv/bin/pip install Werkzeug==2.0.1
