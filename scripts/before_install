@@ -3,6 +3,7 @@ current_path="$0"
 project_folder=${current_path%%/scripts*}
 echo $project_folder
 cd $project_folder/examples/tutorial
+python3 setup.py
 sudo apt install python3.10-venv -y
 python3 -m venv $project_folder/venv
 cd $project_folder
