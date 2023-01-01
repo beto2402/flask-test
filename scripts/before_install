@@ -3,8 +3,8 @@ source examples/tutorial
 sudo apt install python3.10-venv -y
 python3 -m venv venv
 activate () {
-    . ../../venv/bin/activate
+    . /opt/codedeploy-agent/venv/bin/activate
 }
 
-/opt/codedeploy-agent/venv/venv/bin/pip install -e ../..
-/opt/codedeploy-agent/venv/venv/bin/pip install -e .
+/opt/codedeploy-agent/venv/bin/pip install -e ../..
+/opt/codedeploy-agent/venv/bin/pip install -e .
