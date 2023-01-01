@@ -1,6 +1,9 @@
 #!/bin/bash
 pwd
 echo "$0"
+current_path="$0"
+desired_path=${current_path%%scripts*}
+echo $desired_path
 cd /home/ubuntu/flask-test/examples/tutorial
 sudo apt install python3.10-venv -ypython3 -m venv /home/ubuntu/flask-test/venv
 cd /home/ubuntu/flask-test
