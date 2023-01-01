@@ -1,0 +1,9 @@
+#!/bin/bash
+cd examples/tutorial
+python3 -m venv venv
+activate () {
+    . ../../venv/bin/activate
+}
+
+../../venv/bin/pip install -e ../..
+../../venv/bin/pip install -e .
