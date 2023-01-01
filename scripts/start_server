@@ -6,5 +6,5 @@ activate () {
   . $project_folder/venv/bin/activate
 }
 pwd
-flask --app flaskr init-db
-flask --app flaskr run
+$project_folder/venv/bin/flask --app flaskr init-db
+$project_folder/venv/bin/flask --app flaskr run
