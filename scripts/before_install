@@ -1,11 +1,12 @@
 #!/bin/bash
 pwd
 cd ../../examples/tutorial
-sudo apt install python3.10-venv -y
-python3 -m venv venv
+easy_install pip
+python3 -m venv /home/ubuntu/flask-test/venv
+cd /home/ubuntu/flask-test
 activate () {
-    . /opt/codedeploy-agent/venv/bin/activate
+    . /home/ubuntu/flask-test/venv/bin/activate
 }
 
-/opt/codedeploy-agent/venv/bin/pip install -e ../..
-/opt/codedeploy-agent/venv/bin/pip install -e .
+/home/ubuntu/flask-test/venv/bin/pip install -e ../..
+/home/ubuntu/flask-test/venv/bin/pip install -e .

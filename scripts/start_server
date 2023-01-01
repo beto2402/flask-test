@@ -1,6 +1,6 @@
 #!/bin/bash
 activate () {
-  . /opt/codedeploy-agent/venv/bin/activate
+  . /home/ubuntu/flask-test/venv/bin/activate
 }
 
 flask --app flaskr init-db
