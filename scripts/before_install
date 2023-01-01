@@ -1,15 +1,13 @@
 #!/bin/bash
-pwd
-echo "$0"
 current_path="$0"
-desired_path=${current_path%%scripts*}
-echo $desired_path
-cd /home/ubuntu/flask-test/examples/tutorial
-sudo apt install python3.10-venv -ypython3 -m venv /home/ubuntu/flask-test/venv
-cd /home/ubuntu/flask-test
+project_folder=${current_path%%/scripts*}
+echo $project_folder
+cd $project_folder/examples/tutorial
+sudo apt install python3.10-venv -ypython3 -m venv $project_folder/venv
+cd $project_folder
 activate () {
-    . /home/ubuntu/flask-test/venv/bin/activate
+    . $project_folder/venv/bin/activate
 }
 
-/home/ubuntu/flask-test/venv/bin/pip install -e ../..
-/home/ubuntu/flask-test/venv/bin/pip install -e .
+$project_folder/venv/bin/pip install -e ../..
+$project_folder/venv/bin/pip install -e .

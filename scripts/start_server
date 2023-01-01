@@ -1,6 +1,8 @@
 #!/bin/bash
+current_path="$0"
+project_folder=${current_path%%/scripts*}
 activate () {
-  . /home/ubuntu/flask-test/venv/bin/activate
+  . $project_folder/venv/bin/activate
 }
 
 flask --app flaskr init-db
