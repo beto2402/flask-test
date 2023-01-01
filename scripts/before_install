@@ -1,6 +1,6 @@
 #!/bin/bash
 pwd
-cd ../../examples/tutorial
+cd /home/ubuntu/flask-test/examples/tutorial
 sudo apt install python3.10-venv -ypython3 -m venv /home/ubuntu/flask-test/venv
 cd /home/ubuntu/flask-test
 activate () {
