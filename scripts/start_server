@@ -1,7 +1,7 @@
 #!/bin/bash
 current_path="$0"
 project_folder=${current_path%%/scripts*}
-cd project_folder
+cd $project_folder
 activate () {
   . $project_folder/venv/bin/activate
 }
