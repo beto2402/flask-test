@@ -10,7 +10,7 @@ Resources:
           ContainerPort: 5000
 hooks:
   BeforeInstall:
-  - location: scripts/set_permissions
+   - location: scripts/set_permissions
      timeout: 300
      runas: root
    - location: scripts/before_install
