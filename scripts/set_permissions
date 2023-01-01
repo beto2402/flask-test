@@ -1,4 +1,5 @@
 #!/bin/bash
 sudo chown -R root ./scripts
+pwd
 sudo chmod 755 scripts/before_install
 sudo chmod 755 scripts/start_server
