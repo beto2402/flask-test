@@ -8,4 +8,4 @@ activate () {
 cd examples/tutorial
 pwd
 $project_folder/venv/bin/flask --app flaskr init-db
-$project_folder/venv/bin/flask --app flaskr run
+$project_folder/venv/bin/flask --app flaskr run -p 8008
