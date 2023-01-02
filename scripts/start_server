@@ -7,4 +7,4 @@ activate () {
 }
 cd examples/tutorial
 pwd
-python3 hello.py
+$project_folder/venv/bin/python3 hello.py
