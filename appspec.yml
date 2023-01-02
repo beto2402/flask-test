@@ -7,7 +7,7 @@ Resources:
         TaskDefinition: "arn:aws:ecs:us-west-1:558435908302:task-definition/ecs-demo-task-definition:revision-number"
         LoadBalancerInfo:
           ContainerName: "Sample CodeDeploy"
-          ContainerPort: 9000
+          ContainerPort: 8008
 hooks:
   AfterInstall:
    - location: scripts/before_install
